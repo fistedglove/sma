@@ -1,0 +1,11 @@
+<tr><td>Logs Cleared</td><td>Admin Backup and cleared log file</td><td>2012/08/24 08:23:10 PM</td></tr>
+<tr><td>Login</td><td>david login successful</td><td>2012/08/24 08:24:44 PM</td></tr>
+<tr><td>Login</td><td>rebecca login successful</td><td>2012/08/24 08:31:44 PM</td></tr>
+<tr><td>Student Profile Updated</td><td>Profile of Brown  Kelvin updated by Rebecca</td><td>2012/08/24 08:32:01 PM</td></tr>
+<tr><td>Login</td><td>clare login successful</td><td>2012/08/24 08:33:19 PM</td></tr>
+<tr><td>Login</td><td>kayode login successful</td><td>2012/08/25 11:19:40 AM</td></tr>
+<tr><td>Login</td><td>david login successful</td><td>2012/08/25 11:23:16 AM</td></tr>
+<tr><td>Login</td><td>mandy login successful</td><td>2012/08/25 11:37:42 AM</td></tr>
+<tr><td>Login</td><td>rebecca login successful</td><td>2012/08/25 11:39:22 AM</td></tr>
+<tr><td>Login</td><td>clare login successful</td><td>2012/08/25 11:43:10 AM</td></tr>
+<tr><td>Second Term Result</td><td>Second term result for Solomon Desmond updated by Clare</td><td>2012/08/25 11:48:46 AM</td></tr>

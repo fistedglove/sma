@@ -1,0 +1,955 @@
+@charset "utf-8";
+
+
+/*css styles created for school management system project*/
+
+
+/*************************GLOBAL STYLES**************************************/
+
+    body,h1,h2,h3,h4,p,div,blockquote,address{margin: 0; padding:0;}
+
+
+    body{font: 100% Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	background: url(../images/background.jpg) no-repeat;}
+
+    a{display: inline; height: 20px; text-indent:0; text-decoration: none;}
+    
+    a:link, a:visited{text-decoration: none; color: maroon;}
+    
+    select.class{width:208px;}
+
+    input.image{margin-bottom: -.2em;}
+    
+    input.update{width:110px; }
+    
+    input{color: #000;}
+    
+    textarea{color: #000;}
+    
+    input.radio{width: 12px; margin: 6px; margin-right: 10px;}   
+    
+    legend {text-align: left;}
+    
+    h1,h2,h3{color:#3c6b92;}
+        
+    p{margin: 15px 5px 5px 5px; padding-bottom: 10px;}
+    
+    br.clear{clear:both;}
+    
+    p.edit{width: 390px; text-align:left; font-size:12px; }
+        
+    div#wrapper{
+        
+    width: 70em; margin: 30px auto; 
+    position: relative; 
+    
+    }
+    
+    div#header {
+    
+    width: 70em; height:7em; 
+    background: url(../images/background4.jpg)repeat-x; 
+    margin-bottom: 1em;}
+    
+    div#mainNav {
+    
+    width:13.5em; float:left; 
+    height: 32em; 
+    background: url(../images/background2.jpg)no-repeat;}
+    
+    div#mainContent {
+    
+    width:56.5em; float: right; 
+    background-color: #fff; position: relative; 
+    background: url(../images/background3.jpg) repeat;}
+    
+    div#footer {
+        
+    width: 70em; clear:both; height:15px; 
+    background-image: url(../images/background4.jpg);}
+    
+    div#schoolLogo{
+    
+    background: url(../images/logo.png) 1em 0em no-repeat; 
+    width: 8em; height: 6.5em; position: absolute; top: .5em; left: 3em;}
+    
+    div#schoolHeader{
+    
+    width: 45em; margin-left: 17em; 
+    margin-top: 1em; background: url(../images/schoolName.png) 1em 2em no-repeat;  
+    height: 6.5em; }
+
+
+    div#schoolLogo a.logo{text-indent: -10000em; display: block; height: 6em;}
+
+    div#schoolHeader h2{color: turquoise;}
+    
+    div#schoolHeader a{text-indent: -10000em; display: block; height: 6em;}
+    
+    
+    body.result{
+   	font: 100% Verdana, Arial, Helvetica, sans-serif;
+   	text-align: center; 
+    background: url(../images/background.jpg) no-repeat;}
+         
+    body.timetable div#wrapper{
+    width: 62em; margin: 30px auto;  
+    position: relative;} 
+     
+    body.timetable div#mainContent {
+    width: 62em; float: none; margin: 1em auto; 
+    margin-bottom: 0em; position: relative; 
+    background: url(../images/background3.jpg)repeat;}
+    
+    body.timetable div#header {
+    width: 62em; height:7em; margin-bottom: 1em; 
+    background: url(../images/background4.jpg) repeat;} 
+       
+    body.timetable div#footer {width: 62em; height:15px; }
+        
+    body.timetable div#schoolLogo{
+    background: url(../images/logo.png) 1em 0em no-repeat; 
+    width: 8em; height: 6.5em; position: absolute; top: .5em; left: 3em;}
+    
+    body.timetable div#schoolHeader{
+    width: 45em; margin-left: 12em; 
+    background: url(../images/schoolName.png) 1em 2em no-repeat;  height: 6.5em; }
+    
+    body.timetable div#schoolLogo a.logo{text-indent: -10000em; display: block;}        
+        
+    body.result div#wrapper{width: 70em; margin: 30px auto; 
+    background-color: #fff; }
+    
+    body.result div#header {width: 70em; height:7em; 
+    margin-top: 0; background-color:#3ab5e0; 
+    background: url(../images/background4.jpg) no-repeat}
+    
+    body.result div#mainContent {
+    width: 70em; float: none; padding-top: 0; 
+    margin: 1em auto; margin-bottom: .5em; position: relative; 
+    background: url(../images/background3.jpg)no-repeat;}
+    
+    body.result div#loginMainContent {width: 60em; padding: 10px; 
+    margin: 5em auto; margin-bottom: 0; position: relative; 
+    background: url(../images/background3.jpg) repeat;}
+    
+    body.result div#footer {width: 70em; 
+    height:15px; background-color: #e4e956;}
+    
+    body.result div#schoolLogo{background: url(../images/logo.png) 1em 0em no-repeat; 
+    width: 8em; height: 7em; position: absolute; top: .5em; left: 3em;}
+    
+    body.result div#schoolHeader{width: 45em; margin-left: 17em; 
+    background: url(../images/schoolName.png) 1em 2em no-repeat; height: 6.5em; }
+    
+    body.result div#schoolLogo a.logo{text-indent: -10000em; display: block;}
+  
+    body.login div#loginWrapper{width: 50em; margin: 20px auto; position: relative; }
+    
+    body.login div#loginHeader {width: 50em; height:7em; 
+    background-color:#3ab5e0; background: url(../images/background4.jpg) no-repeat; 
+    margin-bottom: 1em;}
+    
+    body.login div#loginMainContent {width: 50em; padding: 1px;
+    margin: 1em auto; margin-bottom: 0; position: relative; 
+    background: url(../images/background3.jpg) repeat;}
+    
+    body.login div#loginFooter {width: 50em; height:15px; 
+    background: url(../images/background4.jpg) no-repeat;}
+    
+    body.login div#schoolLogo{background: url(../images/logo.png) 1em 0em no-repeat; 
+    width: 8em; height: 6.5em; position: absolute; top: .5em; left: .5em;}
+    body.login div#schoolHeader{width: 45em; margin-left: 9em; 
+    background: url(../images/schoolNameLogin.png) 1em 2em no-repeat;  
+    height: 6.5em; }
+    
+    body.login div#installMainContent{width: 50em; margin: 20px auto; margin-bottom: 0; 
+    position: relative; float: none; height: 40em; 
+    background-image: url(../images/install.jpg); }
+    
+    body.login div#schoolLogo a.logo{text-indent: -10000em; display: block;}
+    
+    body.login div#installMainContent form{ padding-top:5em ;}
+    
+    body.login fieldset.install{width: 30em; margin: 20px auto; }
+    
+    body.login div#installMainContent input.submit{width: 8em; margin-left: 4em;}
+    
+    
+    body.login div#installMainContent select {width: 10em; margin-left: 1em;}
+    
+    body.result fieldset.login{margin-top: 400px;}
+    
+    ul{list-style-type: none; margin-left: 2px; padding: 10px;}
+    
+    li{text-decoration: none; padding: 10px; margin-left: 3px; width: 220px; }
+    
+    ul li a.nav{text-indent: -1000em; display: block; height: 40px}
+    
+    ul li a#student{background:url(../images/student.png) no-repeat left top; }
+    
+    ul li a#admission{background:url(../images/admissions.png) no-repeat left top; }
+    
+    ul li a#parent{background:url(../images/parent.png) no-repeat left top; }
+    
+    ul li a#staff{background:url(../images/staff.png) no-repeat left top; }
+    
+    ul li a#classes{background:url(../images/classes.png) no-repeat left top; }
+    
+    ul li a#timetable{background:url(../images/timetable.png) no-repeat left top; }
+    
+    ul li a#profile{background:url(../images/profile.png) no-repeat left top; }
+    
+    ul li a#createUser{background:url(../images/createUser.png) no-repeat left top; }
+    
+    ul li a#viewUsers{background:url(../images/viewUsers.png) no-repeat left top; }
+    
+    ul li a#viewLogs{background:url(../images/viewlogs.png) no-repeat left top; }
+    
+    ul li a#addStaff{background:url(../images/addStaff.png) no-repeat left top; }
+    
+    ul li a#payments{background:url(../images/payments.png) no-repeat left top; }
+    
+    ul li a#logOut{background:url(../images/logOut.png) no-repeat left top;height: 30px; }
+    
+    ul li a#houses{background:url(../images/house.png) no-repeat left top; }
+    
+    ul li a#tasks{background:url(../images/tasks.png) no-repeat left top; }
+    
+    ul.links li a{display: block; height: 20px; text-indent:1px; text-align: left;}
+    
+    
+    
+/*************************END OF GLOBAL STYLES**************************************/
+
+
+/*************************STUDENTS STYLES *********************************/
+    
+    fieldset.registration{width: 490px;  padding:5px 10px; margin:1.5em auto;}
+   
+    fieldset.registration select{margin-left: 2.1em;}
+    
+    div.stdinf{float:right; width: 200px; height: 200px; margin: 67px 15px;}
+
+    fieldset.showStudent{width: 30em; padding: .5em; 
+    margin: 1.5em 1em 1em 8em; float:left; clear:left;}
+    
+    div#wrapper div#mainContent div.stdPhoto{float:left; width: 200px; 
+    height: 200px; margin: 2em 1em 1em 1.5em;}
+    
+    div#wrapper div#mainContent div.stdIndexPhoto{float:left; width: 200px; 
+    height: 200px; margin: 1.5em 1em 1em 1.5em;}
+    
+    fieldset.editStudent{margin-left: 13em; margin-top: 0em;}
+    
+    fieldset.editStudent select{margin-left: 2em; margin-top: 0em;}
+    
+    fieldset.classStudent{width: 30em; padding: 5px 5px; 
+    margin: 1em 1em 0em 5em; float:left; clear:left;}
+    
+    fieldset.student{width: 30em; padding: 5px 5px; 
+    margin: 4em 1em 0em 5em; float:left; clear:left;}
+    
+    fieldset.indexStudent{width: 30em; padding: 5px 5px;
+     margin: 1em 1em 2em 5em; float:left; clear:left;}
+
+    div.classPhoto{float:left; width: 200px; height: 200px; margin: 4.5em 1em 1em 1.5em;}
+    
+     div.classStdPhoto{float:left; width: 200px; height: 200px; margin: 1.5em 1em 2.5em 1.5em;}
+
+/*************************END OF STUDENT STYLES *********************************/
+
+
+/*************************DROP DOWN MENU STYLES******************************/
+
+    div.col1{width: 400px; float:left; margin: 30px 10px; padding: 5px;}
+
+    ul#subOne{left: 22px;}
+    ul#subTwo{left: 149px;}
+    ul#subThree{left: 276px;}
+
+    ul.vert{position: absolute; visibility:hidden; top: 25px;}
+    div#stdMenu{background-color: #5fdae3; height: 25px; font-size: 16px; 
+    position: relative; text-align: left; margin-bottom: 0;}
+    
+    div#stdMenu ul{margin: 0; padding: 0; list-style-type: none;}
+    
+    div#stdMenu a{display: block; margin: 0; 
+    padding: 0 3px; font-size: 14px;}
+    
+    div#stdMenu ul.horiz li{float: left; width: 100px; margin-left: 25px; }
+    
+    #stdMenu ul li{width: 100px; background-color: #5fdae3; 
+    display: block; padding: 0; height: 25px; border-left: 2px solid blue;}
+
+/*******************END OF DROP DOWN MENU**********************************/
+
+
+/*******************STAFF STYLES*************************************/
+
+    p.teacher{margin:15px 5px 1px 0; text-align:left;}
+    
+    fieldset.indexStaff{width: 30em; padding: .5em; margin: 1em 1em 1em 5em; float:left; clear:left;}
+    
+    fieldset.viewStaff{width: 30em; padding: .5em; margin: 1em 1em 1em 7em; float:left; clear:left;}
+    
+    fieldset.newStaff{width: 30em; padding: .5em; margin: 1em 1em 1em 7em; margin-left: 13em; float:left; clear:left;}
+    
+    fieldset.editStaff{width: 30em; padding: .5em; margin: 1em 1em 1em 7em; margin-left: 13em; float:left; clear:left;}
+    
+    div#mainContent div.staffPhoto{float:left; width: 200px; height: 200px; margin: 1.5em 1em 1em 1.5em;}
+    
+    div#wrapper div#mainContent div.staffIndexPhoto{float:left; width: 200px; height: 200px; margin: 1.5em 1em 1em 1.5em;}
+    
+    h3.staff{width: 20em; margin-bottom: 2em; text-align: center; margin-left: 12em; margin-top: 1em;}
+    
+    fieldset.searchStaff{width: 30em; padding: .5em; margin: 1.5em 1.5em 1em 4em; float:left; clear:left;}
+    
+    div.searchPhoto{float:left; width: 200px; height: 200px; margin: 2em 1em 1em 1.5em;}
+    
+    fieldset.viewStaff p.edit{width: 35em;}
+
+
+/*******************END OF STAFF STYLES******************************/
+
+
+/*******************PARENT STYLES******************************/
+
+    fieldset.viewParent{width: 30em; padding: 5px 5px;  margin: 1.5em 1em 1em 5em; float:left; clear:left;}
+    fieldset.newParent{width: 30em; padding: 5px 5px; margin: 5px auto; margin-left: 13em; float:left; clear:left;}
+    fieldset.parent select{margin-left: 23px;}
+    fieldset.parent{margin-left: 13em;}
+    
+    div.parentPhoto{float:left; width: 200px; height: 200px; margin: 2em 1em 1em 1.5em;}
+    
+    div#searchBox input{ width: 11em;}
+    div#searchBox fieldset.parent{ height: 22px;}
+    
+    div.child{position: absolute; left: 5em; top: 2em; color: green;}
+
+/*******************END OF PARENT STYLES******************************/
+
+/*********************CLASS STYLES***************************************/
+
+    div.one{float:left; clear:left;}
+    div.two{float:left;}
+    div.three{float:left; clear:left;}
+    div.four{float:left;}
+    div.five{float:left; clear:left;}
+    div.six{float:left;}
+    fieldset.class{width: 23em;  padding:0px 10px; margin:1.5em; margin-right: 1.5em; margin-left: 1.3em;}
+    p.edit_class{width: 33em; text-align:left; font-size:.7em; }
+    
+    div.classTitle{margin-top: 2px; margin-bottom: 3px;}
+   
+
+/*********************END OF CLASS STYLES***************************************/
+
+
+/*********************RESULT STYLES**************************************/
+
+    p.teacher{margin-left: 5em}
+    div.signature{ width: 20em; text-align:left; margin-left: 5em;}
+    div.principal{ width: 23em; text-align:left; float:right; margin: 55px 3.5em 30px 0em; }
+    span.principal{text-align:center; display:block; margin-right:74px;}
+    span.signature{text-align:left; display:block; margin-left:28px;}
+    div.declaration{width: 60em; text-align:left; border: 2px solid #F3F; margin: 10px 0 10px 5em;}
+    div.stDetails1{ float:left; width:23em; margin-right:18px; margin-top:14px;}
+    div.stDetails2{ width:13em; float:left; margin-right: 18px; margin-top:14px;}
+    div.stDetails3{ width:20em; float:right; margin-right: 18px; margin-top:14px;}
+    div.stDetails1 p, div.stDetails3 p, div.stDetails2 p{text-align: left; 
+    color: blueviolet; font-family:Arial, Helvetica, sans-serif; 
+    font-style:normal; font-weight:bold;}
+    
+    div.comment{ float:left; width:24em; height: 40px; 
+    text-align:left; border: 2px solid #F3F; margin: 1px 0 30px 5em;}
+    div.comment p{margin: 2px; padding:1px;}
+    
+    p.dashed{width: 70em; margin: 40px 0 10px 0em; }
+    
+    a.print{font-size: .8em;}
+    
+    p.declaration{text-align:center;}
+    
+    div.parent{ width: 23em; text-align:left; margin-left: 5em; margin-top: 40px; }
+    div#resultHeading span{color:#000; margin: 0 auto; 
+    font-family:Georgia, "Times New Roman", Times, serif; 
+    font-style:normal; font-weight:bold;}
+    
+    div#resultHeading{height: 8em; width: 60em; 
+    background-image: url(../images/resultName.jpg);  margin:3px auto;}
+    
+    table.report{border-collapse:collapse; border: 2px solid blue; 
+    width:60em; margin:0px auto; height:300px;}
+    
+    table.report thead{font-size: .7em;}
+    
+    table.report td.comment{font-size: .8em; text-align: left;}
+    
+    table.report th{padding: 5px; vertical-align: bottom; text-align:center; 
+    background-color: #896287; border: 2px solid blue; font-weight:bold; height:10px; }
+    
+    table.report td{border: 2px solid blue; height: 10px; vertical-align:middle; 
+    text-align:center; background-color: #fff; padding:5px; font-size:14px;}
+    
+    table.report tr.break td{text-align:center; 
+    background-color:#0C9; color:#fff;}
+    
+    table.report th.score{width:4em; height: 15px;}
+    table.report caption{ display:none;}
+    
+    
+    fieldset.remark{width: 600px; padding:5px 20px; margin:1.5em;}
+
+
+    fieldset.score{width: 29em; margin:2.5em auto;}
+    
+    fieldset.score input{width: 12em; margin-right: 7em; }
+    fieldset.score input.submit{width: 8em; margin-right: 3em; }
+    fieldset.score select{width: 12em; margin-right: 7em; }
+    fieldset.score textarea{margin-right: 3em; }
+
+/*********************END OF RESULT STYLES**************************************/
+
+
+/********************* SEARCH BOX STYLES**************************************/
+
+    div#searchBox{width: 70px; position: absolute; top:0px; left:550px; }
+    div#searchBox fieldset{width: 290px; height: 20px; text-align: left; margin: 0;}
+    div#searchBox select{width: 8em; margin: 0; padding: 0;}
+    
+    div#searchBox fieldset input.image{width: 17px; margin-left: 6px;}
+    
+    div#indexSearchBox{width: 70px; position: absolute; top:0px; left:550px; }
+    
+    div#indexSearchBox fieldset{width: 290px; height: 15px; text-align: left; margin: 0; font-size: .8em;}
+    div#indexSearchBox select{width: 8em; margin: 0; padding: 0;}
+    
+    div#indexSearchBox input {width: 12em; margin-top: -.4em;}
+    
+    div#indexSearchBox fieldset input.image{width: 17px; margin-left: 6px;}
+    
+    
+    
+
+/********************* END OF SEARCH BOX STYLES**************************************/
+
+
+/*********************NEXT AND PREVIOUS NAV STYLES**************************************/
+
+    a.navLinks{display:inline; height: 15px; text-decoration: none;}
+    
+    div#navLinks{width: 200px; position: absolute; right: 80px; top: 26px;  }
+    
+    div#stdnavLinks{width: 200px; position: absolute; right: 80px; top: 40px;  }
+    
+    div#mainContent div.photo{float:left; width: 200px; height: 200px; margin: 5.4em 1em 4em 1em;}
+    
+    p.loggedIn{font-size: .8em; color: lavender;}
+    
+    div.title{position: absolute; left: 14em; top: 2em;}
+    
+    div.viewTitle{position: absolute; left: 15em; top: 4.5em;}
+
+/*********************END OF NEXT AND PREVIOUS NAV STYLES**************************************/
+
+
+/*********************CLASS TIMETABLE STYLES**************************************/
+
+    div.mon{float:left; clear:left;}
+    div.tue{float:left;}
+    div.wed{float:left; clear:left;}
+    div.thur{float:left;}
+    div.fri{ clear:both; margin-left: 210px;}
+    div.mainArticle{padding: 0 44px}
+    div.fri p.update{width:400px;}              
+    
+    fieldset#schedule{width: 330px;  padding:5px 5px; margin:1.5em;}
+    fieldset#schedule label{width: 95px;}
+    fieldset#schedule select{width: 145px; margin-right: 1em;}
+    fieldset#schedule input{width: 105px; margin-right:76px ;}
+
+
+    table#classTimetable{border-collapse:collapse; border: 2px solid blue; 
+    width:950px; margin:2em auto; margin-bottom: 3em; height:370px;}
+    
+    table#classTimetable th{padding: 5px; height: 10px; 
+    vertical-align: bottom; text-align:center; 
+    background-color: #896287; border: 2px solid blue; font-weight:bold; }
+    
+    table#classTimetable td{border: 2px solid blue; 
+    vertical-align:bottom; text-align:center; background-color: #fff;}
+    
+    table#classTimetable caption{text-align:left; padding-bottom: 20px;}
+    
+    table#classTimetable tr.break td{text-align:center; font-size: 20px; 
+    background-color:#0C9; color:#fff; vertical-align: middle;}
+    
+    p.title{width: 20em; margin-bottom: 1em;  
+    margin-left: 10.5em; margin-top: 0em; font-size: 1.5em;}
+
+/*********************END OF CLASS TIMETABLE STYLES**************************************/
+
+
+/*********************TEACHER TIMETABLE STYLES**************************************/
+
+    table#teacher{border-collapse:collapse; border: 2px solid blue; width:600px; margin:2em auto; margin-bottom: 2em; }
+    
+    table#teacher th{padding: 5px; vertical-align: 
+    bottom; text-align:center; background-color: #896287; 
+    border: 2px solid blue; font-weight:bold; }
+    
+    table#teacher td{border: 2px solid blue; 
+    vertical-align:bottom; text-align:center; background-color: #fff;}
+    caption{text-align:left; padding-bottom: 20px;}
+    
+    table#teacher tr.break td{text-align:center; 
+    background-color:#0C9; color:#fff;}
+    
+    table#teacher tr.break{height: 2em;}
+    
+    table#teacher thead tr{height: 2em;}
+
+/********************* END OF TEACHER TIMETABLE STYLES**************************************/
+
+
+/*********************TERM COMMENTS STYLES**************************************/
+
+    div#new{position: absolute; left: 13em; top: 5em;}
+    
+    div#comment fieldset{width: 370px;  padding:5px 10px; margin:1.5em;}
+    div#comment fieldset input{width:12.5em; margin-right: 2em;}
+    div#comment fieldset textarea{margin-left:.2em;}
+    div#comment fieldset label{width: 5em;}
+    div#comment fieldset select{width: 13em; margin-right: 2em; }
+    div#comment input.submit{width:5em; margin-right: 3em;}
+    
+    div#viewComment fieldset{width: 27em; margin: 5em auto;}
+    div#viewComment fieldset textarea{margin-right: 1em;}
+    div#viewComment fieldset input.name{width: 15em; margin-right: 2em;}
+    div#viewComment fieldset input{width: 13em; margin-right: 4em;}
+
+
+
+/*********************END OF TERM COMMENTS STYLES**************************************/
+
+
+
+/*********************LOGIN AND LOG OUT STYLES***************************************************/
+
+    #loginMainContent form{width: 25em; padding: 2px 2px; margin: 2em auto; margin-top: 2em; }
+    
+    #loginMainContent fieldset{width: 25em; padding: 2px 2px; margin-top: 16em; margin-left: 0em; }
+    
+    #loginMainContent fieldset.password{width: 26em; padding: 2px 2px; margin-top: 16em; margin-left: 0em; }
+    
+    #loginMainContent fieldset.password select{width: 9em; margin-left: 3.5em;}
+    
+    #loginMainContent fieldset.password input{width: 10em; margin-right: 1em;}
+    
+    #loginMainContent fieldset.password input.confirm{margin-right: 1.9em;}
+    
+    #loginMainContent fieldset.password label.confirm{width: 10em;}
+    
+    #loginMainContent fieldset.password input.submit{width: 5em; margin-left: 5.5em; }
+
+    div.logout{position: absolute; left: 3em; top: 1em; font-size: 1em;}
+    div.chgPassword{position: absolute; left: 3em; top: 1em; font-size: 1em;}
+
+
+/*********************END OF LOGIN AND LOGOUT STYLES***************************************************/
+
+
+/*********************DISPLAY MESSAGES STYLES***************************************************/
+
+    div.message{
+    position: absolute; left: 2em; top: 3em; 
+    font-size: .9em; color: green; margin: 0; width: 30em;}
+    
+    div.warning{
+    position: absolute; left: 2em; top: 3em; 
+    font-size: .9em; color: red;}
+    
+    div#resultMessage{
+    position: absolute; left: 16em; top: 7em; 
+    font-size: .9em; color: green; width: 45em;}
+    
+    div#wrapper div#mainContent div.timetableMessage{
+    position: absolute; left: 11em; top: 1em; 
+    font-size: .9em; color: green; width: 30em;}
+    
+    div.newTimetableMsg{
+    position: absolute; left: 3.5em; top: 1.5em; 
+    font-size: 1em; color: green; width: 350px;}
+    
+    div.indexTimetableMsg{
+    position: absolute; left: 7.5em; top: .5em; 
+    font-size: 1em; color: green; width: 350px;}
+    
+    div.newGreenTimetableMsg{
+    position: absolute; left: 3.5em; top: 1.5em; 
+    font-size: 1em; color: green; width: 350px;}
+    
+    div.newTimetableMsg p{ color: red;}
+    
+    div#wrapper div#mainContent div#parentWarning{
+    position: absolute; left: 12em; top: 1em; 
+    font-size: .9em; color: red; width: 20em;}
+    
+    div#admissionWarning{
+    position: absolute; left: 12.5em; top: 1.5em; 
+    font-size: .9em; color: red; width: 20em;}
+    
+    div#studentWarning{
+    position: absolute; left: 12.5em; top: .5em; 
+    font-size: .9em; color: red; width: 20em;}
+    
+    div.newScoreMsg{
+    position: absolute; left: 10em; top: 0em; 
+    font-size: 1em; color: red; width: 350px;}
+    
+    div.homepageMsg{
+    position: absolute; left: 8em; top: 2.5em; 
+    font-size: .9em; color: green;}
+    
+    div.echo
+    {position: absolute; left: 44em; top: 13.5em; 
+    font-size: .9em; color: green;}
+    
+    div.echoClass{
+    position: absolute; left: 33.5em; top: 15.5em; 
+    font-size: .9em; color: green;width: 29em;}
+    
+    div.echoTeacherClass{
+    position: absolute; left: 41.5em;top: 17em; 
+    font-size: .9em; color: green;}
+    
+    div.echoResult{
+    position: absolute; left: 45.5em; top: 13.5em; 
+    font-size: .9em; color: green;}
+    
+    div.echoHouse{
+    position: absolute; left: 35.5em; top: 15.5em; 
+    font-size: .9em; color: green; width: 29em;}
+    
+    div.echoStudent{
+    position: absolute; left: 36.3em; top: 15.5em; 
+    font-size: .9em; color: green; width: 29em;}
+    
+    div.echoParent{
+    position: absolute; left: 36.3em; top: 15em; 
+    font-size: .9em; color: green; width: 29em;}
+    
+    div#classMsg{
+    position: absolute; left: 5em; top: 3em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+    div#staffMsg{
+    position: absolute; left: 4.5em; top: 1.5em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+    div#parentMsg{
+    position: absolute; left: 4.5em; top: 2em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+    div#wrapper div#mainContent div#stdMsg{
+    position: absolute; left: .5em; top: 5.5em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+    div#userMsg{
+    position: absolute; left: 13em; top: .5em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+    div.logOutGreenMsg{
+    position: absolute; left: 13em; top: 14em; 
+    font-size: .9em; color: green; width: 10em;}
+    
+    div.logOutMsg{
+    position: absolute; left: 13em; top: 14em; 
+    font-size: .9em; color: red; width: 10em;}
+    
+    div.logOutMsg p{color: red;}
+    
+    div#userIndexMsg{
+    position: absolute; left: 5.5em; top: 2em; 
+    font-size: .9em; color: green; width: 10em;}
+    
+    div#wrapper div#mainContent div#calssStdMsg{
+    position: absolute; left: 2.5em; top: 8em; 
+    font-size: .9em; color: green; width: 10em;}
+    
+    div#passwordMsg{
+    position: absolute; left: 12em; top: 14em; 
+    font-size: .9em; color: green; width: 30em;}
+    
+    div#searchMsg{
+    position: absolute; left: 4.5em; top: 3em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+    div#teachStdMsg{
+    position: absolute; left: 3em; top: 7em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+    div.paymentMsg{
+    position: absolute; left: 18em; top: 0em; 
+    font-size: 1em; color: red; width: 25em;}
+    
+    div.viewPaymentMsg{
+    position: absolute; left: 3em; top: 2em; 
+    font-size: 1em; color: red; width: 25em;}
+    
+    div.houseMsg{
+    position: absolute; left: 2em; top: 1em; 
+    font-size: 1em; color: red; width: 25em;}
+    
+    div.newCommentMsg{
+    position: absolute; left: 20em; top: 0em; 
+    font-size: 1em; color: red; width: 25em;}
+    
+    div.newGreenCommentMsg p{color: green;}
+    
+    div.newGreenCommentMsg{
+    position: absolute; left: 20em; top: 0em; 
+    font-size: 1em; color: green; width: 25em;}
+    
+    div.newHouseMsg{
+    position: absolute; left: 18em; top: 0em; 
+    font-size: 1em; color: red; width: 25em;}
+    
+    div.taskMsg{
+    position: absolute; left: 5.5em; top: 2em; 
+    font-size: .9em; color: green;}
+    
+    div#staffIndexMsg{
+    position: absolute; left: 4.5em; top: 3em; 
+    font-size: .9em; color: green; width: 20em;}
+    
+
+/*********************END OF DISPLAY MESSAGES STYLES***************************************************/
+
+
+/*********************USERS STYLES***************************************************/
+    fieldset.user{width: 23em; padding: 5px 5px; margin: 3em auto; margin-left: 13em;}
+    fieldset.user select{width: 9em;}
+    fieldset.user input{width: 9em; margin-right: 74px;}
+    fieldset.user input.submit{width: 7em; margin-left: 115px;}
+    fieldset.viewUser{width: 370px;  padding:5px 10px; margin:2em; margin-right: 1em; margin-left: 1.3em;}
+    
+    fieldset.editUser select{ width: 12em; margin-left: 2em;}
+    
+    fieldset.editUser p{width: 25em;}
+    
+    fieldset.editUser label{width: 8em;}
+    
+    fieldset.editUser{width: 26em; padding: 2px 2px; margin: 3em auto; margin-left: 13em;}
+    
+    fieldset.editUser input{width: 10em; margin-right: 5.5em;}
+    
+    fieldset.editUser input.submit{width: 8em; margin-right: 1em;}
+
+/*********************END OF USERS STYLES***************************************************/
+
+
+
+/***********************LOG STYLES*****************************************************************/
+
+    table.logs{border-collapse:collapse; border: 1px solid blue; 
+    width:50em; margin:30px auto; font-family: Verdana Arial helvetica sans-serif; 
+    font-size: .9em; }
+    
+    table.logs th{padding: 5px; vertical-align: bottom; text-align:center; 
+    background-color: #896287; border: 1px solid blue; font-weight:bold; }
+    
+    table.logs td{border: 1px solid blue; vertical-align:bottom; 
+    text-align:center; background-color: #fff;}
+    
+    div.clearLog{position: absolute; left: 1em; top: .7em;}
+    div#logs{margin-top: 1em;}
+    
+    div#searchBox select.search{width: 9em;}
+
+/***********************END OF LOG STYLES*****************************************************************/
+
+/***********************INSTALLATION************************************************************************* */
+    
+    table.install{border-collapse:collapse; border: 1px solid blue; width:23em; 
+    margin:20px auto; font-family: Verdana Arial helvetica sans-serif; font-size: 1em; }
+    
+    table.install th{padding: 5px; vertical-align: bottom; text-align:center; 
+    background-color: #896287; border: 1px solid blue; font-weight:bold; }
+    
+    table.install td{border: 1px solid blue; 
+    vertical-align:bottom; text-align:center; background-color: #fff;}
+    
+    div#install{margin-top: 1em;}
+    
+    div#installMainContent fieldset.install select{width: 9em; margin-right: 5.7em;}
+    
+    div#installMainContent fieldset.install{ margin-top: 0em;}
+    
+    div#installMainContent fieldset.install label{width: 11em;}
+    
+    div#installMainContent fieldset.install input{width: 9em; margin-right: 4.5em;}
+    
+    div#installMainContent fieldset.install input.install{ margin-left: 9.5em; width: 6em; margin-right: 0;}
+    
+    
+/***********************END OF INSTALLATION************************************************************************* */   
+    
+    
+    
+/*************************PAGE TITLES STYLES************************************************************************ */    
+    
+    h3.pageTitle{margin-bottom: 0em; margin-top: 3em; margin-left: 14em; width: 200px;}
+    
+    h3.classTitle{margin-bottom: 1.5em; margin-top: 1.5em; margin-left: 14em; width: 200px;}
+    
+    h3.staffPageTitle{margin-bottom: 0em; margin-top: 3em; margin-left: 14em; width: 200px;}
+    
+    h3.parentTitle{margin-bottom: 0em; margin-top: 1em; margin-left: 7em; width: 700px;}
+    
+    h3.paymentTitle{margin-bottom: 0em; margin-top: 1em; margin-left: 8em; width: 500px;}
+    
+    h3.title{width: 27em; margin-bottom: 0em; 
+    text-align: center; margin-left: 8em; margin-top: 1em;}
+    
+    h3.studentTitle{width: 27em; margin-bottom: 1.5em; 
+    text-align: center; margin-left: 11em; margin-top: 1em;}
+    
+    h3.admissionTitle{width: 27em; margin-bottom: 0em; 
+    text-align: center; margin-left: 11em; margin-top: 1em;}
+    
+    h3.staffTitle{width: 27em; margin-bottom: 1.5em; 
+    text-align: center; margin-left: 12em; margin-top: 1em;}
+    
+    h3.editTitle{width: 37em; margin-bottom: 0em; font-size: 1.2em; 
+    text-align: center; margin-left: 7em; margin-top: 1em;}
+    
+    
+    h3.titleClass{width: 27em; margin-bottom: .5em; 
+    text-align: center; margin-left: 6em; margin-top: 1em;}
+    
+    h4.title{width: 20em; margin-bottom: 3em; text-align: center; 
+    margin-left: 9em; margin-top: 0em; font-size: 1.5em;}
+
+    h3.houseTitle{margin-bottom: 1.5em; margin-top: 1.5em; 
+    margin-left: 10em; width: 400px;}
+    
+    
+/*************************END OF PAGE TITLES STYLES************************************************************************ */
+    
+    
+/**************************PAYMENTS STYLES********************************************************************** */
+
+    fieldset.payment{width: 28em;  padding:5px 10px; margin:2.8em auto; margin-right: 17em;}
+    
+    fieldset.payment input{width: 12em; margin-right: 3.5em;}
+    
+    fieldset.payment select{width: 12em; margin-left: 2em;}
+    
+    fieldset.payment input.submit{width: 7em; margin-left: 6.5em;}
+    
+    fieldset.payment label{width: 10em;}
+/**************************END OF PAYMENTS STYLES********************************************************************** */    
+    
+/**************************HOUSE STYLES********************************************************************* */
+    
+    fieldset.house{width: 23em; margin: 3em auto; margin-right: 18em; }
+    
+    fieldset.house input{width: 12em; margin-right: 1em;}
+    
+    fieldset.house select{width: 11.5em;  margin-right: 2em;}
+    
+    fieldset.house input.submit{width: 8em; margin-left: 6.5em;}
+    
+    p.new{width: 200px; text-align:left; font-size:12px; margin: 0; margin-top: 1em; margin-left: 2em; }
+    
+/**************************END OF HOUSE STYLES********************************************************************* */    
+    
+
+/*************************TASKS STYLES********************************************************************* */    
+    
+    div#searchBox fieldset{width: 19em;}
+    
+    div#searchBox select.restore{width: 10em;}
+    
+    ul.tasks li{background-image: url(../images/links.png); background-position: left center; background-repeat: no-repeat;}
+    
+    ul.tasks{margin-top: 2em; margin-left: 2em;}
+    
+    ul.tasks li a{display: block; height: 18px; text-indent:1px; text-align: left; width: 310px; margin-left: 1em;}
+
+
+    div#academicYear{width: 70px; position: absolute; top:16em; left:2.95em; }
+    
+    div#academicYear p{width: 22em; height: 25px; padding-top: 3px; 
+    padding-left: 1.7em; text-align: left; margin: 0; 
+    background-image: url(../images/links.png); background-repeat: no-repeat;}
+    
+    div#academicYear input{width: 7em; margin: 0; padding: 0; margin-bottom: -.2em;}
+    
+    div#academicYear  input.image{width: 17px; margin-left: 6px;}
+    
+    
+    
+    div#dbPass{width: 70px; position: absolute; top:19em; left:2.95em; }
+    
+    div#dbPass p{width: 22em; height: 25px; padding-top: 3px; padding-left: 1.7em; 
+    text-align: left; margin: 0; 
+    background-image: url(../images/links.png); background-repeat: no-repeat;}
+    
+    div#dbPass input{width: 8em; margin: 0; padding: 0; margin-bottom: -.2em;}
+    
+    div#dbPass  input.image{width: 17px; margin-left: 6px;}
+
+
+/*************************END OF TASKS STYLES********************************************************************* */ 
+    
+
+/*************************MISCELLANEOUS STYLES********************************************************************* */   
+  
+    div#emptyResult{height: 32em; margin: 1em auto; margin-bottom: 0em; }
+    
+    div#emptyTimetable{height: 32em; margin: 0em auto; }
+ 
+    div#homePage{height: 30em; margin-top: 2.5em;}
+ 
+ 
+    table.search{border-collapse:collapse; 
+    border: 2px solid blue; width:30em; margin:30px 20px 30px 20px;}
+    
+    table.search th{padding: 5px; vertical-align: bottom; 
+    text-align:center; background-color: #896287; 
+    border: 2px solid blue; font-weight:bold; height:10px; }
+    
+    table.search td{border: 2px solid blue; vertical-align:bottom; 
+    text-align:center; background-color: #fff; padding:5px; font-size:14px;}
+    
+    
+    div.img{float:left; width: 200px; height: 150px; margin-top:10px;}
+    
+    
+    input{width: 200px; clear:both; margin-left:0px;}
+    label{margin-right: 0px; padding-right:0px; width: 150px; 
+    float:left; text-align:left; display:block;  }
+    
+    label.sex{margin-right:60px; padding:0; width: 50px; float:none;}
+    input.sex{width: 70px; text-align:left}
+    
+    input.submit{width: 80px; margin-left:30px; }
+    input.file{width: 200px;}
+    input.payment{width:150px; display:block;}
+    input.std{width: 150px; clear:both;}
+    p.std{margin: 15px 10px 5px 15px; padding-bottom: 10px; width:450px;}
+    select{width:150px; margin-right:80px;}
+    select.staff{width:180px; margin-right:30px;}
+    
+    
+    fieldset{width: 450px;  padding:5px 20px; margin:1.5em;}
+    fieldset.first{width: 230px; padding: 5px 5px; margin: 60px 5px 10px 60px; float:left; clear:left;}
+    fieldset.second{width: 230px; padding: 5px 5px; margin: 60px 5px; float:left;}
+    fieldset.third{width: 230px; padding: 5px 5px; margin: 60px 5px; float:left;}
+    
+/*************************END OF MISCELLENOUS STYLES********************************************************************* */   
+   

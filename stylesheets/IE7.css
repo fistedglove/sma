@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+div#mainNav {width:13.5em; float:left; height: 32em; background-image: url(../images/background2.jpg)}
+
+div#header {width: 70em; height:7em; background-image: url(../images/background4.jpg); margin-bottom: 1em;}
+
+body.timetable div#header {width: 62em; height:7em; margin-bottom: 1em; margin: 0;}    
+
+body.result div#header {width: 70em; height:7em; background-color:#3ab5e0; background-image: url(../images/background4.jpg);}
+
+div#footer {width: 70em; clear:both; height:15px; background-image: url(../images/background4.jpg);}
+
+body.login div#loginFooter {width: 50em; height:15px; background-image: url(../images/background4.jpg);}
+
+a.navLinks{display:inline; height: 15px; text-decoration: none; border: none;}
+
+body.login div#loginFooter {width: 50em; height:15px; background-image: url(../images/background4.jpg);}
+
+body.timetable div#wrapper div#footer {width: 62em; height:15px; background-image: url(../images/background4.jpg); } 
+
+
+/* Result Styles */
+
+p.dashed{width: 70em; margin: 40px 0 10px 0em; }
+
+/*Student Styles */
+
+div#wrapper div#mainContent div.stdPhoto{float:left; width: 200px; height: 200px; margin: 2.5em 1em 4em 1.5em;}
+div#wrapper div#mainContent div.stdIndexPhoto{float:left; width: 200px; height: 200px; margin: 1.8em 1em 2em 1.5em;}
+div.classPhoto{float:left; width: 200px; height: 200px; margin: 6.8em 1em 5em 1.5em;}
+
+/* Parent Styles */
+div.parentPhoto{float:left; width: 200px; height: 200px; margin: 2.3em 1em 1em 1.5em;}
+
+
+/* Staff Styles */
+div#wrapper div#mainContent div.staffPhoto{float:left; width: 200px; height: 200px; margin: 2em 1em 1em 1.5em;}
+div#wrapper div#mainContent div.staffIndexPhoto{float:left; width: 200px; height: 200px; margin: 2em 1em 1em 1.5em;}
+fieldset.searchStaff{width: 30em; padding: .5em; margin: 1em 1.5em 1em 4em; float:left; clear:left;}
+
+div.searchPhoto{float:left; width: 200px; height: 200px; margin: 2em 1em 1em 1.5em;}
+
+/* Class Styles */
+
+fieldset.class{width: 24em;  padding:5px 5px; padding-right: 15px; margin:1em; margin-right: 1em; margin-left: 1em;}
+p.edit_class{width: 33em; text-align:left; font-size:12px; }
+
+
+/* Radio Button*/
+
+input.radio{width: 14px; margin: 6px; margin-right: 10px;}
+
+/* Page Title */
+
+h3.pageTitle{margin-bottom: 0em; margin-top: 3em; margin-left: 14em; width: 200px;}
+
+h3.parentTitle{margin-bottom: 0em; margin-top: 1em; margin-left: 8em; width: 700px;}
+
+
+
+/* Class Student */
+div.classPhoto{float:left; width: 200px; height: 200px; margin: 4.8em 1em 1em 1.5em;}
+div.classTitle{margin-top: 2px; margin-bottom: 3px;}
+div.classStdPhoto{float:left; width: 200px; height: 200px; margin: 1.8em 1em 2.5em 1.5em;}
+
+
+
+/* All input Styles*/
+
+div#mainContent p input{color: black; }
+
+div#mainContent select{color: black; }
+ 
+div#mainContent textarea{color: black;}
